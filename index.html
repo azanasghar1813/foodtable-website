@@ -488,7 +488,50 @@ footer a:hover{text-decoration:underline; color:#FFD56B;}
 .hours-table{width:100%; border-collapse:collapse; font-size:13px;}
 .hours-table td{padding:6px 0; color:#A89F93; border-bottom:1px dashed rgba(255,255,255,.10);}
 .hours-table td:last-child{text-align:right; color:#FFD56B; font-weight:600;}
-.copyright{border-top:1px solid rgba(255,255,255,.08); margin-top:34px; padding:18px 20px 24px; text-align:center; font-size:12.5px; color:#787066;}
+.copyright{border-top:1px solid rgba(255,255,255,.08); margin-top:34px; padding:18px 20px 12px; text-align:center; font-size:12.5px; color:#787066;}
+.dev-credit-wrap{display:flex; align-items:center; justify-content:center; padding:0 16px 32px;}
+.dev-badge{
+  display:inline-flex; align-items:center; gap:8px; padding:8px 18px; border-radius:999px;
+  background:linear-gradient(135deg, rgba(28,22,22,.92), rgba(15,11,11,.96));
+  border:1px solid rgba(246,196,83,.24);
+  box-shadow:0 6px 22px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  text-decoration:none; color:#DDD4C7; font-family:'Poppins',sans-serif;
+  font-size:12px; font-weight:500; letter-spacing:.3px;
+  transition:all .28s cubic-bezier(.22,.85,.32,1); position:relative; overflow:hidden;
+}
+.dev-badge:before{
+  content:''; position:absolute; top:0; left:-120%; width:100%; height:100%;
+  background:linear-gradient(90deg, transparent, rgba(246,196,83,.18), transparent);
+  transition:left .65s ease;
+}
+.dev-badge:hover:before{left:120%;}
+.dev-badge:hover{
+  border-color:rgba(246,196,83,.7);
+  box-shadow:0 8px 30px rgba(246,196,83,.25), 0 0 0 1px rgba(246,196,83,.4);
+  transform:translateY(-2px); color:#fff;
+}
+.dev-badge-pulse{
+  width:7px; height:7px; border-radius:50%; background:#10B981;
+  box-shadow:0 0 0 0 rgba(16,185,129,.7); animation:devPulse 2s infinite; flex-shrink:0;
+}
+@keyframes devPulse{
+  0%{box-shadow:0 0 0 0 rgba(16,185,129,.7);}
+  70%{box-shadow:0 0 0 7px rgba(16,185,129,0);}
+  100%{box-shadow:0 0 0 0 rgba(16,185,129,0);}
+}
+.dev-badge-icon{font-size:13px; line-height:1; filter:drop-shadow(0 0 6px rgba(246,196,83,.6));}
+.dev-badge-label{color:#9E9689; font-size:11.5px; font-weight:500; letter-spacing:.4px;}
+.dev-badge-name{
+  color:var(--gold,#F6C453); font-weight:700; font-size:12.5px; letter-spacing:.4px;
+  text-decoration:underline; text-underline-offset:3px; text-decoration-color:rgba(246,196,83,.45);
+  transition:all .2s ease;
+}
+.dev-badge:hover .dev-badge-name{
+  text-decoration-color:#F6C453; color:#FFF3D1; text-shadow:0 0 12px rgba(246,196,83,.7);
+}
+.dev-badge-arrow{color:var(--gold,#F6C453); transition:transform .25s ease; flex-shrink:0;}
+.dev-badge:hover .dev-badge-arrow{transform:translate(2px,-2px);}
 @media(max-width:860px){.footer-inner{grid-template-columns:1fr;}}
 
 /* Floating cart button */
@@ -1135,6 +1178,18 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
     </div>
   </div>
   <div class="copyright">© 2026 FoodTable — Roasted FoodTable, Chowk Azam. All rights reserved. Prices include no hidden charges; menu as printed in-store.</div>
+  <div class="dev-credit-wrap">
+    <a href="https://azanasghar.me" target="_blank" rel="noopener noreferrer" class="dev-badge" aria-label="Contact Developer - Azan Asghar">
+      <span class="dev-badge-pulse" aria-hidden="true"></span>
+      <span class="dev-badge-icon" aria-hidden="true">⚡</span>
+      <span class="dev-badge-label">Contact Developer:</span>
+      <span class="dev-badge-name">azanasghar.me</span>
+      <svg class="dev-badge-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="7" y1="17" x2="17" y2="7"></line>
+        <polyline points="7 7 17 7 17 17"></polyline>
+      </svg>
+    </a>
+  </div>
 </footer>
 
 <!-- Floating View Cart pill (appears once the cart has items) -->
