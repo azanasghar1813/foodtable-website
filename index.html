@@ -488,50 +488,128 @@ footer a:hover{text-decoration:underline; color:#FFD56B;}
 .hours-table{width:100%; border-collapse:collapse; font-size:13px;}
 .hours-table td{padding:6px 0; color:#A89F93; border-bottom:1px dashed rgba(255,255,255,.10);}
 .hours-table td:last-child{text-align:right; color:#FFD56B; font-weight:600;}
-.copyright{border-top:1px solid rgba(255,255,255,.08); margin-top:34px; padding:18px 20px 12px; text-align:center; font-size:12.5px; color:#787066;}
-.dev-credit-wrap{display:flex; align-items:center; justify-content:center; padding:0 16px 32px;}
-.dev-badge{
-  display:inline-flex; align-items:center; gap:8px; padding:8px 18px; border-radius:999px;
-  background:linear-gradient(135deg, rgba(28,22,22,.92), rgba(15,11,11,.96));
-  border:1px solid rgba(246,196,83,.24);
-  box-shadow:0 6px 22px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.08);
-  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
-  text-decoration:none; color:#DDD4C7; font-family:'Poppins',sans-serif;
-  font-size:12px; font-weight:500; letter-spacing:.3px;
-  transition:all .28s cubic-bezier(.22,.85,.32,1); position:relative; overflow:hidden;
+.footer-bottom-bar{
+  border-top:1px solid rgba(255,255,255,.08);
+  margin-top:38px;
+  padding:24px 20px 32px;
+  max-width:1280px;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:20px;
 }
-.dev-badge:before{
-  content:''; position:absolute; top:0; left:-120%; width:100%; height:100%;
-  background:linear-gradient(90deg, transparent, rgba(246,196,83,.18), transparent);
-  transition:left .65s ease;
+.footer-bottom-left{
+  font-size:12.5px;
+  color:#787066;
+  line-height:1.55;
+  letter-spacing:.15px;
 }
-.dev-badge:hover:before{left:120%;}
-.dev-badge:hover{
-  border-color:rgba(246,196,83,.7);
-  box-shadow:0 8px 30px rgba(246,196,83,.25), 0 0 0 1px rgba(246,196,83,.4);
-  transform:translateY(-2px); color:#fff;
+.footer-bottom-left .copy-line-1{color:#8C8478;}
+.footer-bottom-left .copy-line-2{color:#6E665C; margin-top:1px;}
+.footer-bottom-right{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  text-align:right;
+  gap:2px;
 }
-.dev-badge-pulse{
-  width:7px; height:7px; border-radius:50%; background:#10B981;
-  box-shadow:0 0 0 0 rgba(16,185,129,.7); animation:devPulse 2s infinite; flex-shrink:0;
+.dev-crafted-label{
+  font-size:12px;
+  color:#DDD4C7;
+  font-weight:500;
+  letter-spacing:.25px;
+  line-height:1.2;
 }
-@keyframes devPulse{
-  0%{box-shadow:0 0 0 0 rgba(16,185,129,.7);}
-  70%{box-shadow:0 0 0 7px rgba(16,185,129,0);}
-  100%{box-shadow:0 0 0 0 rgba(16,185,129,0);}
+.dev-smiley-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  text-decoration:none;
+  cursor:pointer;
+  padding:2px 0;
+  transition:transform .25s cubic-bezier(.34,1.56,.64,1);
 }
-.dev-badge-icon{font-size:13px; line-height:1; filter:drop-shadow(0 0 6px rgba(246,196,83,.6));}
-.dev-badge-label{color:#9E9689; font-size:11.5px; font-weight:500; letter-spacing:.4px;}
-.dev-badge-name{
-  color:var(--gold,#F6C453); font-weight:700; font-size:12.5px; letter-spacing:.4px;
-  text-decoration:underline; text-underline-offset:3px; text-decoration-color:rgba(246,196,83,.45);
-  transition:all .2s ease;
+.dev-smiley-link:hover{
+  transform:translateY(-1px);
 }
-.dev-badge:hover .dev-badge-name{
-  text-decoration-color:#F6C453; color:#FFF3D1; text-shadow:0 0 12px rgba(246,196,83,.7);
+.dev-domain{
+  color:var(--gold,#F6C453);
+  font-size:17px;
+  font-weight:700;
+  letter-spacing:.35px;
+  transition:color .25s ease, text-shadow .25s ease;
 }
-.dev-badge-arrow{color:var(--gold,#F6C453); transition:transform .25s ease; flex-shrink:0;}
-.dev-badge:hover .dev-badge-arrow{transform:translate(2px,-2px);}
+.dev-smiley-link:hover .dev-domain{
+  color:#FFE6A3;
+  text-shadow:0 0 14px rgba(246,196,83,.65);
+}
+.smiley-widget{
+  position:relative;
+  width:42px;
+  height:26px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.smiley-svg{
+  overflow:visible;
+}
+.eye{
+  fill:var(--gold,#F6C453);
+  animation:eyeBlink 3.6s infinite ease-in-out;
+  transform-box:fill-box;
+  transform-origin:center;
+  transition:fill .25s ease, filter .25s ease;
+}
+.eye-left{animation-delay:0s;}
+.eye-right{animation-delay:.08s;}
+@keyframes eyeBlink{
+  0%, 86%, 94%, 100%{transform:scaleY(1);}
+  90%{transform:scaleY(0.08);}
+}
+.mouth-path{
+  fill:none;
+  stroke:var(--gold,#F6C453);
+  stroke-width:2.4;
+  stroke-linecap:round;
+  transition:d .38s cubic-bezier(.34,1.56,.64,1), stroke .25s ease, filter .25s ease;
+}
+.mouth-head{
+  fill:none;
+  stroke:var(--gold,#F6C453);
+  stroke-width:2.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  transition:d .38s cubic-bezier(.34,1.56,.64,1), stroke .25s ease, filter .25s ease;
+}
+.dev-smiley-link:hover .mouth-path{
+  d:path("M 4 11 Q 21 24 34 13");
+  stroke:#FFE6A3;
+  filter:drop-shadow(0 0 6px rgba(246,196,83,.65));
+}
+.dev-smiley-link:hover .mouth-head{
+  d:path("M 28 9 L 34 13 L 29 18");
+  stroke:#FFE6A3;
+  filter:drop-shadow(0 0 6px rgba(246,196,83,.65));
+}
+.dev-smiley-link:hover .eye{
+  fill:#FFE6A3;
+  filter:drop-shadow(0 0 6px rgba(246,196,83,.75));
+}
+@media(max-width:760px){
+  .footer-bottom-bar{
+    flex-direction:column-reverse;
+    align-items:flex-start;
+    gap:16px;
+    padding:20px 16px 28px;
+  }
+  .footer-bottom-right{
+    align-items:flex-start;
+    text-align:left;
+  }
+}
 @media(max-width:860px){.footer-inner{grid-template-columns:1fr;}}
 
 /* Floating cart button */
@@ -1177,18 +1255,25 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
       <p style="margin-top:10px;">Free home delivery within Chowk Azam.</p>
     </div>
   </div>
-  <div class="copyright">© 2026 FoodTable — Roasted FoodTable, Chowk Azam. All rights reserved. Prices include no hidden charges; menu as printed in-store.</div>
-  <div class="dev-credit-wrap">
-    <a href="https://azanasghar.me" target="_blank" rel="noopener noreferrer" class="dev-badge" aria-label="Contact Developer - Azan Asghar">
-      <span class="dev-badge-pulse" aria-hidden="true"></span>
-      <span class="dev-badge-icon" aria-hidden="true">⚡</span>
-      <span class="dev-badge-label">Contact Developer:</span>
-      <span class="dev-badge-name">azanasghar.me</span>
-      <svg class="dev-badge-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <line x1="7" y1="17" x2="17" y2="7"></line>
-        <polyline points="7 7 17 7 17 17"></polyline>
-      </svg>
-    </a>
+  <div class="footer-bottom-bar">
+    <div class="footer-bottom-left">
+      <div class="copy-line-1">© 2026 FoodTable — Roasted FoodTable, Chowk Azam.</div>
+      <div class="copy-line-2">All rights reserved.</div>
+    </div>
+    <div class="footer-bottom-right">
+      <div class="dev-crafted-label">Crafted by Azan Asghar</div>
+      <a href="https://azanasghar.me" target="_blank" rel="noopener noreferrer" class="dev-smiley-link" aria-label="Visit Azan Asghar portfolio">
+        <span class="dev-domain">azanasghar.me</span>
+        <div class="smiley-widget" aria-hidden="true">
+          <svg class="smiley-svg" viewBox="0 0 42 26" width="42" height="26">
+            <circle class="eye eye-left" cx="19" cy="5" r="2" />
+            <circle class="eye eye-right" cx="29" cy="5" r="2" />
+            <path class="mouth-path" id="devMouthPath" d="M 4 20 Q 21 6 34 13" />
+            <path class="mouth-head" id="devMouthHead" d="M 28 8 L 34 13 L 29 18" />
+          </svg>
+        </div>
+      </a>
+    </div>
   </div>
 </footer>
 
@@ -2016,6 +2101,25 @@ document.addEventListener('keydown', function(e){
       originalCloseCart();
       if (!document.getElementById('sajjiModal').classList.contains('open')) document.body.style.overflow = '';
     };
+  }
+
+  // Interactive Smiley Arrow Face Animation
+  var devLink = document.querySelector('.dev-smiley-link');
+  var mouthPath = document.getElementById('devMouthPath');
+  var mouthHead = document.getElementById('devMouthHead');
+  if (devLink && mouthPath){
+    var defaultMouth = 'M 4 20 Q 21 6 34 13';
+    var smileMouth   = 'M 4 11 Q 21 24 34 13';
+    var defaultHead  = 'M 28 8 L 34 13 L 29 18';
+    var smileHead    = 'M 28 9 L 34 13 L 29 18';
+    function setFaceSmile(smile){
+      mouthPath.setAttribute('d', smile ? smileMouth : defaultMouth);
+      if (mouthHead) mouthHead.setAttribute('d', smile ? smileHead : defaultHead);
+    }
+    devLink.addEventListener('mouseenter', function(){ setFaceSmile(true); });
+    devLink.addEventListener('mouseleave', function(){ setFaceSmile(false); });
+    devLink.addEventListener('touchstart', function(){ setFaceSmile(true); }, {passive:true});
+    devLink.addEventListener('touchend', function(){ setTimeout(function(){ setFaceSmile(false); }, 1400); }, {passive:true});
   }
 })();
 </script>
