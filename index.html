@@ -975,7 +975,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
       </div>
       <div class="hero-photo-wrap">
         <video class="hero-video" autoplay muted playsinline preload="auto" poster="images/sajji.webp">
-          <source src="videos/sajji_landscape.mp4" type="video/mp4">
+          <source src="videos/sajji_opt.mp4?v=1" type="video/mp4">
         </video>
         <div class="hero-photo-vignette"></div>
       </div>
@@ -1004,7 +1004,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
       </div>
       <div class="hero-photo-wrap">
         <video class="hero-video" autoplay muted playsinline preload="auto" poster="images/pizza.webp">
-          <source src="videos/pizza_landscape.mp4" type="video/mp4">
+          <source src="videos/pizza_opt.mp4?v=1" type="video/mp4">
         </video>
         <div class="hero-photo-vignette"></div>
       </div>
@@ -1033,7 +1033,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
       </div>
       <div class="hero-photo-wrap">
         <video class="hero-video" autoplay muted playsinline preload="auto" poster="images/burger.webp">
-          <source src="videos/platter_landscape.mp4" type="video/mp4">
+          <source src="videos/platter_opt.mp4?v=1" type="video/mp4">
         </video>
         <div class="hero-photo-vignette"></div>
       </div>
@@ -1221,74 +1221,74 @@ var CATEGORIES = [
 
 var ITEMS = [
   /* Sajji — variant cards */
-  {id:'sajji-rice', cat:'sajji', name:'Sajji — With Rice', desc:'Slow-roasted chicken sajji served over fragrant masala rice — the full FoodTable experience.', img:'menu_pics/Roasted_chicken_sajji_with_rice_7248c324.jpg', badge:'BEST SELLER', sajji:true,
+  {id:'sajji-rice', cat:'sajji', name:'Sajji — With Rice', desc:'Slow-roasted chicken sajji served over fragrant masala rice — the full FoodTable experience.', img:'menu_pics/Roasted_chicken_sajji_with_rice_7248c324.webp?v=1', badge:'BEST SELLER', sajji:true,
    sel:{label:'Pick your size', options:[{label:'Quarter', price:599},{label:'Half', price:1199},{label:'Full', price:1999}]}},
-  {id:'sajji-plain', cat:'sajji', name:'Sajji — Without Rice', desc:'The same fire-roasted sajji, served straight with raita and sajji sauce. All chicken, no fillers.', img:'menu_pics/Roasted_chicken_on_platter_49f8d0b1.jpg', sajji:true,
+  {id:'sajji-plain', cat:'sajji', name:'Sajji — Without Rice', desc:'The same fire-roasted sajji, served straight with raita and sajji sauce. All chicken, no fillers.', img:'menu_pics/Roasted_chicken_on_platter_49f8d0b1.webp?v=1', sajji:true,
    sel:{label:'Pick your size', options:[{label:'Quarter', price:499},{label:'Half', price:999},{label:'Full', price:1599}]}},
   /* Roasted chicken */
-  {id:'platter', cat:'roasted', name:'FoodTable Platter', desc:'The full table on one board — sajji, bucket, burger, shawarma, two sauces and a 1.5 litre cold drink.', img:'menu_pics/Foodtable_Platter_royal_feast_ddccc3df.jpg', price:3599, badge:'FAMILY FEAST', platter:true,
+  {id:'platter', cat:'roasted', name:'FoodTable Platter', desc:'The full table on one board — sajji, bucket, burger, shawarma, two sauces and a 1.5 litre cold drink.', img:'menu_pics/Foodtable_Platter_royal_feast_ddccc3df.webp?v=1', price:3599, badge:'FAMILY FEAST', platter:true,
    includes:['Roasted Chicken Sajji','Roasted Chicken Bucket','Roasted Chicken Burger','Roasted Chicken Shawarma','2 Types of Sauce','Cold Drink 1.5 Ltr']},
-  {id:'roast-burger', cat:'roasted', name:'Roasted Chicken Burger', desc:'Juicy roasted chicken stacked in a soft bun with our house sauce and fresh crunch.', img:'menu_pics/Roasted_chicken_burger_on_board_313950e1.jpg', price:399},
-  {id:'roast-shawarma', cat:'roasted', name:'Roasted Chicken Shawarma', desc:'Roasted chicken strips wrapped warm with garlic sauce, pickles and fries inside.', img:'menu_pics/Roasted_chicken_shawarma_wrap_abee1d2a.jpg', price:299},
-  {id:'roast-bucket', cat:'roasted', name:'Roasted Chicken Bucket', desc:'A bucket of crispy roasted chicken pieces — built for sharing, rarely shared.', img:'menu_pics/Roasted_chicken_bucket_served_abf15bfa.jpg', price:799, badge:'HOT'},
+  {id:'roast-burger', cat:'roasted', name:'Roasted Chicken Burger', desc:'Juicy roasted chicken stacked in a soft bun with our house sauce and fresh crunch.', img:'menu_pics/Roasted_chicken_burger_on_board_313950e1.webp?v=1', price:399},
+  {id:'roast-shawarma', cat:'roasted', name:'Roasted Chicken Shawarma', desc:'Roasted chicken strips wrapped warm with garlic sauce, pickles and fries inside.', img:'menu_pics/Roasted_chicken_shawarma_wrap_abee1d2a.webp?v=1', price:299},
+  {id:'roast-bucket', cat:'roasted', name:'Roasted Chicken Bucket', desc:'A bucket of crispy roasted chicken pieces — built for sharing, rarely shared.', img:'menu_pics/Roasted_chicken_bucket_served_abf15bfa.webp?v=1', price:799, badge:'HOT'},
   /* Regular pizza */
-  {id:'rp-tikka', cat:'pizza', name:'Chicken Tikka Pizza', desc:'Desi-style tikka chicken, onions and mozzarella on a fresh hand-tossed base.', img:'menu_pics/Chicken_tikka_pizza_6e87910d.jpg', sel:{label:'Pick your size', options:sizeOpts(REG)}},
-  {id:'rp-fajita', cat:'pizza', name:'Chicken Fajita Pizza', desc:'Fajita chicken with capsicum, onions and a gentle smoky kick.', img:'menu_pics/Chicken_fajita_pizza_on_peel_132bf879.jpg', sel:{label:'Pick your size', options:sizeOpts(REG)}},
-  {id:'rp-achari', cat:'pizza', name:'Chicken Achari Pizza', desc:'Tangy achari-spiced chicken for the ones who like a pickle punch.', img:'menu_pics/Chicken_Achari_pizza_on_pan_c7fd814c.jpg', sel:{label:'Pick your size', options:sizeOpts(REG)}},
-  {id:'rp-bbq', cat:'pizza', name:'Chicken BBQ Pizza', desc:'BBQ chicken with sweet-smoky sauce under a blanket of cheese.', img:'menu_pics/Chicken_BBQ_pizza_on_tray_afeb09da.jpg', sel:{label:'Pick your size', options:sizeOpts(REG)}},
-  {id:'rp-supreme', cat:'pizza', name:'Chicken Supreme Pizza', desc:'Loaded chicken supreme — extra toppings, extra cheese, zero regrets.', img:'menu_pics/Chicken_Supreme_Pizza_on_platter_475b0809.jpg', sel:{label:'Pick your size', options:sizeOpts(REG)}, badge:'POPULAR'},
-  {id:'rp-veg', cat:'pizza', name:'Vegetable Pizza', desc:'Garden vegetables, sweetcorn and mozzarella — fresh and fully loaded.', img:'menu_pics/Vegetable_pizza_on_slate_tray_7798cb1a.jpg', sel:{label:'Pick your size', options:sizeOpts(REG)}},
-  {id:'rp-spicy', cat:'pizza', name:'Hot N Spicy Pizza', desc:'Spicy chicken, chillies and a hot sauce drizzle. Handle with care.', img:'menu_pics/Hot_N_Spicy_pizza_on_ad4ef3d5.jpg', sel:{label:'Pick your size', options:sizeOpts(REG)}},
+  {id:'rp-tikka', cat:'pizza', name:'Chicken Tikka Pizza', desc:'Desi-style tikka chicken, onions and mozzarella on a fresh hand-tossed base.', img:'menu_pics/Chicken_tikka_pizza_6e87910d.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(REG)}},
+  {id:'rp-fajita', cat:'pizza', name:'Chicken Fajita Pizza', desc:'Fajita chicken with capsicum, onions and a gentle smoky kick.', img:'menu_pics/Chicken_fajita_pizza_on_peel_132bf879.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(REG)}},
+  {id:'rp-achari', cat:'pizza', name:'Chicken Achari Pizza', desc:'Tangy achari-spiced chicken for the ones who like a pickle punch.', img:'menu_pics/Chicken_Achari_pizza_on_pan_c7fd814c.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(REG)}},
+  {id:'rp-bbq', cat:'pizza', name:'Chicken BBQ Pizza', desc:'BBQ chicken with sweet-smoky sauce under a blanket of cheese.', img:'menu_pics/Chicken_BBQ_pizza_on_tray_afeb09da.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(REG)}},
+  {id:'rp-supreme', cat:'pizza', name:'Chicken Supreme Pizza', desc:'Loaded chicken supreme — extra toppings, extra cheese, zero regrets.', img:'menu_pics/Chicken_Supreme_Pizza_on_platter_475b0809.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(REG)}, badge:'POPULAR'},
+  {id:'rp-veg', cat:'pizza', name:'Vegetable Pizza', desc:'Garden vegetables, sweetcorn and mozzarella — fresh and fully loaded.', img:'menu_pics/Vegetable_pizza_on_slate_tray_7798cb1a.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(REG)}},
+  {id:'rp-spicy', cat:'pizza', name:'Hot N Spicy Pizza', desc:'Spicy chicken, chillies and a hot sauce drizzle. Handle with care.', img:'menu_pics/Hot_N_Spicy_pizza_on_ad4ef3d5.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(REG)}},
   /* Special pizza */
-  {id:'sp-special', cat:'special-pizza', name:'FoodTable Special Pizza', desc:'Our signature special — the best-selling pizza on the menu, loaded the FoodTable way.', img:'menu_pics/Special_pizza_on_black_platter_9999272c.jpg', badge:'BEST SELLER', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
-  {id:'sp-malai', cat:'special-pizza', name:'Malai Boti Pizza', desc:'Creamy malai boti chunks over a cheesy base — rich, mild and indulgent.', img:'menu_pics/Chicken_malai_boti_pizza_on_2d53707b.jpg', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
-  {id:'sp-crown', cat:'special-pizza', name:'Crown Crust Pizza', desc:'A crown-style crust stuffed and baked golden around a loaded centre.', img:'menu_pics/Crown_Crust_Pizza_on_slate_2fa44d08.jpg', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
-  {id:'sp-lazania', cat:'special-pizza', name:'Loaded Lazania Pizza', desc:'Lasagna-style loaded layers on a pizza base. Rs. 200 extra, worth every rupee.', img:'menu_pics/Loaded_lasagna_pizza_baking_2a2e4d1c.jpg', sel:{label:'Pick your size', options:sizeOpts(specPlus(200))}},
-  {id:'sp-kabab', cat:'special-pizza', name:'Kabab Stuffed Pizza', desc:'Stuffed with smoky chicken kabab pieces and double cheese.', img:'menu_pics/Kabab_stuffed_crust_pizza_4552b007.jpg', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
-  {id:'sp-cheese', cat:'special-pizza', name:'Cheese Lover Pizza', desc:'For the cheese-obsessed — an extra-deep layer of mozzarella pull.', img:'menu_pics/Cheese_Lover_pizza_slice_lifting_42e90cdb.jpg', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
-  {id:'sp-deepdish', cat:'special-pizza', name:'Deep Dish Pizza', desc:'Thick, deep and fully loaded Chicago-style. Rs. 300 extra for the deep dish base.', img:'menu_pics/Deep_dish_pizza_baking_10b7ded5.jpg', sel:{label:'Pick your size', options:sizeOpts(specPlus(300))}},
+  {id:'sp-special', cat:'special-pizza', name:'FoodTable Special Pizza', desc:'Our signature special — the best-selling pizza on the menu, loaded the FoodTable way.', img:'menu_pics/Special_pizza_on_black_platter_9999272c.webp?v=1', badge:'BEST SELLER', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
+  {id:'sp-malai', cat:'special-pizza', name:'Malai Boti Pizza', desc:'Creamy malai boti chunks over a cheesy base — rich, mild and indulgent.', img:'menu_pics/Chicken_malai_boti_pizza_on_2d53707b.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
+  {id:'sp-crown', cat:'special-pizza', name:'Crown Crust Pizza', desc:'A crown-style crust stuffed and baked golden around a loaded centre.', img:'menu_pics/Crown_Crust_Pizza_on_slate_2fa44d08.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
+  {id:'sp-lazania', cat:'special-pizza', name:'Loaded Lazania Pizza', desc:'Lasagna-style loaded layers on a pizza base. Rs. 200 extra, worth every rupee.', img:'menu_pics/Loaded_lasagna_pizza_baking_2a2e4d1c.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(specPlus(200))}},
+  {id:'sp-kabab', cat:'special-pizza', name:'Kabab Stuffed Pizza', desc:'Stuffed with smoky chicken kabab pieces and double cheese.', img:'menu_pics/Kabab_stuffed_crust_pizza_4552b007.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
+  {id:'sp-cheese', cat:'special-pizza', name:'Cheese Lover Pizza', desc:'For the cheese-obsessed — an extra-deep layer of mozzarella pull.', img:'menu_pics/Cheese_Lover_pizza_slice_lifting_42e90cdb.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(SPEC)}},
+  {id:'sp-deepdish', cat:'special-pizza', name:'Deep Dish Pizza', desc:'Thick, deep and fully loaded Chicago-style. Rs. 300 extra for the deep dish base.', img:'menu_pics/Deep_dish_pizza_baking_10b7ded5.webp?v=1', sel:{label:'Pick your size', options:sizeOpts(specPlus(300))}},
   /* Burgers */
-  {id:'b-ft', cat:'burgers', name:'FT Special Burger', desc:'The FoodTable special — signature sauce, juicy patty and the full works.', img:'menu_pics/Double-decker_burger_commercial_…_1665bd98.jpg', price:450, badge:'POPULAR'},
-  {id:'b-zinger', cat:'burgers', name:'Zinger Burger', desc:'Crispy fried chicken thigh, crunchy coating, cool mayo in a toasted bun.', img:'menu_pics/Zinger_Burger_on_black_surface_9a135a63.jpg', price:350},
-  {id:'b-cheese', cat:'burgers', name:'Cheese Burger', desc:'A molten cheese slice over a seasoned patty with house sauce.', img:'menu_pics/Loaded_cheese_burger_on_board_c0b45211.jpg', price:450},
-  {id:'b-pizza', cat:'burgers', name:'Pizza Burger', desc:'Burger meets pizza — pizza sauce, cheese and oregano on a loaded patty.', img:'menu_pics/Pizza_burger_with_cheese_pulling_c50b901d.jpg', price:550},
-  {id:'b-patty', cat:'burgers', name:'Patty Burger', desc:'The classic — simple, juicy and straight to the point.', img:'menu_pics/Chicken_patty_burger_on_surface_713e5e90.jpg', price:250},
-  {id:'b-chapli', cat:'burgers', name:'Chapli Burger', desc:'Desi chapli kabab in a bun with chutney and onions. Proper local flavour.', img:'menu_pics/Chapli_burger_on_slate_aed709da.jpg', price:300},
+  {id:'b-ft', cat:'burgers', name:'FT Special Burger', desc:'The FoodTable special — signature sauce, juicy patty and the full works.', img:'menu_pics/Double-decker_burger_commercial_…_1665bd98.webp?v=1', price:450, badge:'POPULAR'},
+  {id:'b-zinger', cat:'burgers', name:'Zinger Burger', desc:'Crispy fried chicken thigh, crunchy coating, cool mayo in a toasted bun.', img:'menu_pics/Zinger_Burger_on_black_surface_9a135a63.webp?v=1', price:350},
+  {id:'b-cheese', cat:'burgers', name:'Cheese Burger', desc:'A molten cheese slice over a seasoned patty with house sauce.', img:'menu_pics/Loaded_cheese_burger_on_board_c0b45211.webp?v=1', price:450},
+  {id:'b-pizza', cat:'burgers', name:'Pizza Burger', desc:'Burger meets pizza — pizza sauce, cheese and oregano on a loaded patty.', img:'menu_pics/Pizza_burger_with_cheese_pulling_c50b901d.webp?v=1', price:550},
+  {id:'b-patty', cat:'burgers', name:'Patty Burger', desc:'The classic — simple, juicy and straight to the point.', img:'menu_pics/Chicken_patty_burger_on_surface_713e5e90.webp?v=1', price:250},
+  {id:'b-chapli', cat:'burgers', name:'Chapli Burger', desc:'Desi chapli kabab in a bun with chutney and onions. Proper local flavour.', img:'menu_pics/Chapli_burger_on_slate_aed709da.webp?v=1', price:300},
   /* Shawarma */
-  {id:'s-roasted', cat:'shawarma', name:'Roasted Shawarma', desc:'Our roasted chicken, shaved and wrapped with fries and garlic sauce.', img:'menu_pics/Roasted_shawarma_wrap_cut_diagon…_601afd79.jpg', price:300},
-  {id:'s-chicken', cat:'shawarma', name:'Chicken Shawarma', desc:'The everyday classic — chicken, pickles and sauce in a warm wrap.', img:'menu_pics/Chicken_shawarma_wrap_on_platter_bd87ae60.jpg', price:200},
-  {id:'s-zinger', cat:'shawarma', name:'Zinger Shawarma', desc:'Crispy zinger strips rolled up shawarma-style with a spicy sauce kick.', img:'menu_pics/Zinger_Shawarma_wrap_sliced_2380b868.jpg', price:300},
-  {id:'s-cheese', cat:'shawarma', name:'Chicken Cheese Shawarma', desc:'Chicken shawarma finished with melted cheese in every bite.', img:'menu_pics/Chicken_Cheese_Shawarma_cut_0e9e1df2.jpg', price:350},
+  {id:'s-roasted', cat:'shawarma', name:'Roasted Shawarma', desc:'Our roasted chicken, shaved and wrapped with fries and garlic sauce.', img:'menu_pics/Roasted_shawarma_wrap_cut_diagon…_601afd79.webp?v=1', price:300},
+  {id:'s-chicken', cat:'shawarma', name:'Chicken Shawarma', desc:'The everyday classic — chicken, pickles and sauce in a warm wrap.', img:'menu_pics/Chicken_shawarma_wrap_on_platter_bd87ae60.webp?v=1', price:200},
+  {id:'s-zinger', cat:'shawarma', name:'Zinger Shawarma', desc:'Crispy zinger strips rolled up shawarma-style with a spicy sauce kick.', img:'menu_pics/Zinger_Shawarma_wrap_sliced_2380b868.webp?v=1', price:300},
+  {id:'s-cheese', cat:'shawarma', name:'Chicken Cheese Shawarma', desc:'Chicken shawarma finished with melted cheese in every bite.', img:'menu_pics/Chicken_Cheese_Shawarma_cut_0e9e1df2.webp?v=1', price:350},
   /* Deals */
-  {id:'deal1', cat:'deals', name:'Deal 1', desc:'1 Zinger Burger • 1 Regular Fries • 1 Regular Pack Drink.', img:'menu_pics/Combo_meal_food_photography_3b43960b.jpg', price:670, deal:true},
-  {id:'deal2', cat:'deals', name:'Deal 2', desc:'1 Small Pizza • 2 Chicken Shawarma • 1 Regular Fries • 1.5 Ltr Drink.', img:'menu_pics/Combo_meal_food_photography_d6953e24.jpg', price:1400, deal:true, badge:'POPULAR'},
-  {id:'deal3', cat:'deals', name:'Deal 3', desc:'1 Medium Pizza • 6 Hot Wings • 1.5 Ltr Drink.', img:'menu_pics/Pizza_and_wings_combo_meal_73ae1ec9.jpg', price:1700, deal:true},
-  {id:'deal4', cat:'deals', name:'Deal 4', desc:'2 FT Special Burger • 6 Oven Baked Wings • 1 Loaded Fries • 1.5 Ltr Drink.', img:'menu_pics/Gourmet_combo_meal_food_photography_7d0bfdbc.jpg', price:2080, deal:true},
-  {id:'deal5', cat:'deals', name:'Deal 5', desc:'1 Large Pizza • 1 Zinger Burger • 1 Chicken Shawarma • 1.5 Ltr Drink.', img:'menu_pics/Combo_meal_food_photography_prompt_44b91a2d.jpg', price:2180, deal:true},
-  {id:'deal6', cat:'deals', name:'Deal 6', desc:'1 Large Pizza • 2 Zinger Burger • 6 Hot Wings • 1.5 Ltr Drink.', img:'menu_pics/Family_feast_food_photography_b4447667.jpg', price:2790, deal:true, badge:'FAMILY'},
+  {id:'deal1', cat:'deals', name:'Deal 1', desc:'1 Zinger Burger • 1 Regular Fries • 1 Regular Pack Drink.', img:'menu_pics/Combo_meal_food_photography_3b43960b.webp?v=1', price:670, deal:true},
+  {id:'deal2', cat:'deals', name:'Deal 2', desc:'1 Small Pizza • 2 Chicken Shawarma • 1 Regular Fries • 1.5 Ltr Drink.', img:'menu_pics/Combo_meal_food_photography_d6953e24.webp?v=1', price:1400, deal:true, badge:'POPULAR'},
+  {id:'deal3', cat:'deals', name:'Deal 3', desc:'1 Medium Pizza • 6 Hot Wings • 1.5 Ltr Drink.', img:'menu_pics/Pizza_and_wings_combo_meal_73ae1ec9.webp?v=1', price:1700, deal:true},
+  {id:'deal4', cat:'deals', name:'Deal 4', desc:'2 FT Special Burger • 6 Oven Baked Wings • 1 Loaded Fries • 1.5 Ltr Drink.', img:'menu_pics/Gourmet_combo_meal_food_photography_7d0bfdbc.webp?v=1', price:2080, deal:true},
+  {id:'deal5', cat:'deals', name:'Deal 5', desc:'1 Large Pizza • 1 Zinger Burger • 1 Chicken Shawarma • 1.5 Ltr Drink.', img:'menu_pics/Combo_meal_food_photography_prompt_44b91a2d.webp?v=1', price:2180, deal:true},
+  {id:'deal6', cat:'deals', name:'Deal 6', desc:'1 Large Pizza • 2 Zinger Burger • 6 Hot Wings • 1.5 Ltr Drink.', img:'menu_pics/Family_feast_food_photography_b4447667.webp?v=1', price:2790, deal:true, badge:'FAMILY'},
   /* Rolls & wings */
-  {id:'r-special', cat:'rolls', name:'Special Roll', desc:'The loaded special roll — generous filling, signature sauces, wrapped tight.', img:'menu_pics/Special_roll_chicken_item_852adc31.jpg', price:900},
-  {id:'r-ovenwings', cat:'rolls', name:'Oven Baked Wings (6 pc)', desc:'Six oven-baked wings, seasoned and roasted till the edges crisp.', img:'menu_pics/Oven_baked_wings_served_on_b2b32b90.jpg', price:500},
-  {id:'r-hotwings', cat:'rolls', name:'Hot Wings (6 pc)', desc:'Six fiery hot wings with our spicy glaze. Napkins recommended.', img:'menu_pics/Hot_wings_with_red_dip_a376b79a.jpg', price:450},
-  {id:'r-drumstick', cat:'rolls', name:'Drumstick', desc:'One golden, juicy chicken drumstick — the perfect add-on.', img:'menu_pics/Crispy_chicken_drumstick_on_plate_69565cfd.jpg', price:200},
-  {id:'r-nuggets', cat:'rolls', name:'Nuggets (6 pc)', desc:'Six crispy chicken nuggets, golden outside and tender inside.', img:'menu_pics/Chicken_nuggets_on_plate_518b330d.jpg', price:360},
-  {id:'r-zingerroll', cat:'rolls', name:'Zinger Roll', desc:'Crispy zinger strips rolled in a soft paratha-style wrap.', img:'menu_pics/Zinger_roll_on_dark_slate_5d7f439e.jpg', price:500},
-  {id:'r-chickenroll', cat:'rolls', name:'Chicken Roll', desc:'Classic chicken roll with onions, chutney and a warm flaky wrap.', img:'menu_pics/Chicken_roll_on_platter_4bdd6d2c.jpg', price:400},
+  {id:'r-special', cat:'rolls', name:'Special Roll', desc:'The loaded special roll — generous filling, signature sauces, wrapped tight.', img:'menu_pics/Special_roll_chicken_item_852adc31.webp?v=1', price:900},
+  {id:'r-ovenwings', cat:'rolls', name:'Oven Baked Wings (6 pc)', desc:'Six oven-baked wings, seasoned and roasted till the edges crisp.', img:'menu_pics/Oven_baked_wings_served_on_b2b32b90.webp?v=1', price:500},
+  {id:'r-hotwings', cat:'rolls', name:'Hot Wings (6 pc)', desc:'Six fiery hot wings with our spicy glaze. Napkins recommended.', img:'menu_pics/Hot_wings_with_red_dip_a376b79a.webp?v=1', price:450},
+  {id:'r-drumstick', cat:'rolls', name:'Drumstick', desc:'One golden, juicy chicken drumstick — the perfect add-on.', img:'menu_pics/Crispy_chicken_drumstick_on_plate_69565cfd.webp?v=1', price:200},
+  {id:'r-nuggets', cat:'rolls', name:'Nuggets (6 pc)', desc:'Six crispy chicken nuggets, golden outside and tender inside.', img:'menu_pics/Chicken_nuggets_on_plate_518b330d.webp?v=1', price:360},
+  {id:'r-zingerroll', cat:'rolls', name:'Zinger Roll', desc:'Crispy zinger strips rolled in a soft paratha-style wrap.', img:'menu_pics/Zinger_roll_on_dark_slate_5d7f439e.webp?v=1', price:500},
+  {id:'r-chickenroll', cat:'rolls', name:'Chicken Roll', desc:'Classic chicken roll with onions, chutney and a warm flaky wrap.', img:'menu_pics/Chicken_roll_on_platter_4bdd6d2c.webp?v=1', price:400},
   /* Pasta */
-  {id:'p-cheese', cat:'pasta', name:'Cheese Pasta', desc:'Penne folded through a rich, molten cheese sauce.', img:'menu_pics/Oven_baked_cheese_pasta_8f202350.jpg', price:800},
-  {id:'p-alfredo', cat:'pasta', name:'Alfredo Pasta', desc:'Creamy white alfredo sauce with chicken and herbs.', img:'menu_pics/Alfredo_pasta_with_chicken_771c54df.jpg', price:700},
-  {id:'p-zingo', cat:'pasta', name:'Zingo Pasta', desc:'Our zingo-style pasta — crispy chicken over saucy, spicy penne.', img:'menu_pics/Zingo_Pasta_in_baking_dish_7910a2a0.jpg', price:900, badge:'POPULAR'},
+  {id:'p-cheese', cat:'pasta', name:'Cheese Pasta', desc:'Penne folded through a rich, molten cheese sauce.', img:'menu_pics/Oven_baked_cheese_pasta_8f202350.webp?v=1', price:800},
+  {id:'p-alfredo', cat:'pasta', name:'Alfredo Pasta', desc:'Creamy white alfredo sauce with chicken and herbs.', img:'menu_pics/Alfredo_pasta_with_chicken_771c54df.webp?v=1', price:700},
+  {id:'p-zingo', cat:'pasta', name:'Zingo Pasta', desc:'Our zingo-style pasta — crispy chicken over saucy, spicy penne.', img:'menu_pics/Zingo_Pasta_in_baking_dish_7910a2a0.webp?v=1', price:900, badge:'POPULAR'},
   /* Sandwich & fries */
-  {id:'sf-chsand', cat:'sandwich', name:'Chicken Sandwich', desc:'Grilled chicken sandwich with fresh salad and house sauce.', img:'menu_pics/Chicken_sandwich_on_wooden_board_c861449c.jpg', price:600},
-  {id:'sf-grill', cat:'sandwich', name:'Grill Sandwich', desc:'Triple-layer grilled sandwich, golden and fully loaded.', img:'menu_pics/Grill_sandwich_cut_and_stacked_2bde998f.jpg', price:650},
-  {id:'sf-pizzafries', cat:'sandwich', name:'Pizza Fries', desc:'Fries baked pizza-style — sauce, cheese and toppings all over.', img:'menu_pics/Pizza_fries_in_skillet_95bfe21c.jpg', price:800},
-  {id:'sf-regfries', cat:'sandwich', name:'Regular Fries', desc:'Golden, salted and crispy — the side that goes with everything.', img:'menu_pics/French_fries_and_ketchup_91a92206.jpg', price:250},
-  {id:'sf-loadedfries', cat:'sandwich', name:'Loaded Fries', desc:'Fries loaded with cheese sauce, chicken chunks and jalapeño kick.', img:'menu_pics/Loaded_fries_on_black_platter_d773ca71.jpg', price:650, badge:'POPULAR'},
+  {id:'sf-chsand', cat:'sandwich', name:'Chicken Sandwich', desc:'Grilled chicken sandwich with fresh salad and house sauce.', img:'menu_pics/Chicken_sandwich_on_wooden_board_c861449c.webp?v=1', price:600},
+  {id:'sf-grill', cat:'sandwich', name:'Grill Sandwich', desc:'Triple-layer grilled sandwich, golden and fully loaded.', img:'menu_pics/Grill_sandwich_cut_and_stacked_2bde998f.webp?v=1', price:650},
+  {id:'sf-pizzafries', cat:'sandwich', name:'Pizza Fries', desc:'Fries baked pizza-style — sauce, cheese and toppings all over.', img:'menu_pics/Pizza_fries_in_skillet_95bfe21c.webp?v=1', price:800},
+  {id:'sf-regfries', cat:'sandwich', name:'Regular Fries', desc:'Golden, salted and crispy — the side that goes with everything.', img:'menu_pics/French_fries_and_ketchup_91a92206.webp?v=1', price:250},
+  {id:'sf-loadedfries', cat:'sandwich', name:'Loaded Fries', desc:'Fries loaded with cheese sauce, chicken chunks and jalapeño kick.', img:'menu_pics/Loaded_fries_on_black_platter_d773ca71.webp?v=1', price:650, badge:'POPULAR'},
   /* Extras */
-  {id:'x-drink', cat:'extras', name:'Drink Pack', desc:'Chilled soft drink pack to wash it all down.', img:'menu_pics/Cola_drink_pack_commercial_photo…_16a8e239.jpg', price:80},
-  {id:'x-raita', cat:'extras', name:'Raita', desc:'Cool mint raita — the sajji\u2019s best friend.', img:'menu_pics/Bowl_of_raita_with_garnish_0201651b.jpg', price:50},
-  {id:'x-sajjisauce', cat:'extras', name:'Sajji Sauce', desc:'Extra pot of our signature sajji sauce.', img:'menu_pics/Sajji_sauce_in_bowl_110b5f52.jpg', price:80},
-  {id:'x-dip', cat:'extras', name:'FoodTable Special Dip Sauce', desc:'The house special dip — creamy, tangy and a little bit secret.', img:'menu_pics/Special_dip_sauce_in_bowl_652cabb7.jpg', price:80, badge:'RS. 80'}
+  {id:'x-drink', cat:'extras', name:'Drink Pack', desc:'Chilled soft drink pack to wash it all down.', img:'menu_pics/Cola_drink_pack_commercial_photo…_16a8e239.webp?v=1', price:80},
+  {id:'x-raita', cat:'extras', name:'Raita', desc:'Cool mint raita — the sajji\u2019s best friend.', img:'menu_pics/Bowl_of_raita_with_garnish_0201651b.webp?v=1', price:50},
+  {id:'x-sajjisauce', cat:'extras', name:'Sajji Sauce', desc:'Extra pot of our signature sajji sauce.', img:'menu_pics/Sajji_sauce_in_bowl_110b5f52.webp?v=1', price:80},
+  {id:'x-dip', cat:'extras', name:'FoodTable Special Dip Sauce', desc:'The house special dip — creamy, tangy and a little bit secret.', img:'menu_pics/Special_dip_sauce_in_bowl_652cabb7.webp?v=1', price:80, badge:'RS. 80'}
 ];
 function sizeOpts(map){ return Object.keys(map).map(function(k){ return {label:k, price:map[k]}; }); }
 
