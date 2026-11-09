@@ -547,8 +547,8 @@ footer a:hover{text-decoration:underline; color:#FFD56B;}
 }
 .smiley-widget{
   position:relative;
-  width:48px;
-  height:30px;
+  width:58px;
+  height:32px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -585,12 +585,12 @@ footer a:hover{text-decoration:underline; color:#FFD56B;}
   transition:d .38s cubic-bezier(.34,1.56,.64,1), stroke .25s ease, filter .25s ease;
 }
 .dev-smiley-link:hover .mouth-path{
-  d:path("M 3 14 Q 22 28 41 16");
+  d:path("M 2 13 Q 30 30 54 16");
   stroke:#FFE6A3;
   filter:drop-shadow(0 0 7px rgba(246,196,83,.7));
 }
 .dev-smiley-link:hover .mouth-head{
-  d:path("M 33 11 L 41 16 L 34 22");
+  d:path("M 45 10 L 54 16 L 46 22");
   stroke:#FFE6A3;
   filter:drop-shadow(0 0 7px rgba(246,196,83,.7));
 }
@@ -1265,11 +1265,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
       <a href="https://azanasghar.me" target="_blank" rel="noopener noreferrer" class="dev-smiley-link" aria-label="Visit Azan Asghar portfolio">
         <span class="dev-domain">azanasghar.me</span>
         <div class="smiley-widget" aria-hidden="true">
-          <svg class="smiley-svg" viewBox="0 0 46 30" width="46" height="30">
-            <circle class="eye eye-left" cx="21" cy="4" r="2.2" />
-            <circle class="eye eye-right" cx="33" cy="4" r="2.2" />
-            <path class="mouth-path" id="devMouthPath" d="M 3 24 Q 23 11 41 17" />
-            <path class="mouth-head" id="devMouthHead" d="M 33 11 L 41 17 L 34 23" />
+          <svg class="smiley-svg" viewBox="0 0 58 32" width="58" height="32">
+            <circle class="eye eye-left" cx="26" cy="4.5" r="2.3" />
+            <circle class="eye eye-right" cx="40" cy="4.5" r="2.3" />
+            <path class="mouth-path" id="devMouthPath" d="M 2 25 Q 32 10 54 17" />
+            <path class="mouth-head" id="devMouthHead" d="M 45 10 L 54 17 L 46 24" />
           </svg>
         </div>
       </a>
@@ -2108,10 +2108,10 @@ document.addEventListener('keydown', function(e){
   var mouthPath = document.getElementById('devMouthPath');
   var mouthHead = document.getElementById('devMouthHead');
   if (devLink && mouthPath){
-    var defaultMouth = 'M 3 24 Q 23 11 41 17';
-    var smileMouth   = 'M 3 14 Q 22 28 41 16';
-    var defaultHead  = 'M 33 11 L 41 17 L 34 23';
-    var smileHead    = 'M 33 11 L 41 16 L 34 22';
+    var defaultMouth = 'M 2 25 Q 32 10 54 17';
+    var smileMouth   = 'M 2 13 Q 30 30 54 16';
+    var defaultHead  = 'M 45 10 L 54 17 L 46 24';
+    var smileHead    = 'M 45 10 L 54 16 L 46 22';
     function setFaceSmile(smile){
       mouthPath.setAttribute('d', smile ? smileMouth : defaultMouth);
       if (mouthHead) mouthHead.setAttribute('d', smile ? smileHead : defaultHead);
